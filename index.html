@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Snake Game</title>
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <h1>&nbsp Snake Game !!</h1>
+            <img class="snake-pic" src="images/snake-pic.jpg">
+        </div>
+        <div id="box">
+
+        </div>
+
+        <div id="scoreBoard">
+            &nbsp&nbsp&nbsp Score : 0
+            <div id="instruction">
+                <br>
+                <br>
+                <br>
+                press any arrow key to play the game.<br><br>
+                Navigate the snake through arrow keys.<br>
+                <div id="level"><br><br>
+                    &nbsp &nbsp select Level<br><br>
+                    <label class="container">Easy
+                        <input type="radio" id="easy" name="snake" value="easy">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="container">Medium
+                        <input type="radio" id="medium" name="snake" value="Medium">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="container">Hard
+                        <input type="radio" id="hard" name="snake" value="Hard">
+                        <span class="checkmark"></span>
+                      </label>
+                      <button class="button" onclick="fun1()" id="btn1">Apply</button>
+                </div>
+
+            </div>
+            <div id="myName">
+                <br><br><br><br><br><br><br><br><br>
+                &nbsp made by Biswajit..
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

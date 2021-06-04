@@ -1,0 +1,209 @@
+body{
+    background-color: #027106;
+}
+.main{
+    min-height: 98vh;
+    background-size: 199vh 100vh;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    float: top;
+}
+#box{
+    height: 94vmin;
+    width: 100vmin;
+    background: linear-gradient(rgb(110, 44, 44),#283149);
+    border: 5px solid red;
+    display: grid;
+    grid-template-rows: repeat(25,1fr) ;
+    grid-template-columns: repeat(25,1fr);
+}
+#instruction{
+    height: 30vmin;
+    width:50vmin;
+    font-size:30px;
+    font-weight: 1000;
+    font-family: monospace;
+    color: yellow;
+   
+}
+#myName{
+    height: 30vmin;
+    width:50vmin;
+    font-size:30px;
+    font-weight: 1000;
+    font-family: monospace;
+    color: rgb(250, 126, 250);
+}
+h1{
+    font-size:30px;
+    font-weight: 1000;
+    font-family:'Times New Roman', Times, serif;
+    color: whitesmoke ;
+}
+.snake-pic
+{
+    height: 90vmin;
+    width:45vmin;
+}
+#scoreBoard{
+    height: 90vmin;
+    width:50vmin;
+    font-size:30px;
+    font-weight: 1000;
+    font-family: 'Rock Salt';
+    color: white;
+}
+.snake-body{
+    background-color: aqua;
+    border-radius:5px;
+    box-shadow: #027106;
+}
+.head{
+    background-color:red;
+    border-radius:10px;
+    transform: scale(1.03);
+    border-top: solid green;
+    border-left: solid green;
+    border-right: solid green;
+
+} 
+.food{
+     background: linear-gradient(yellow,blue);
+     border:1px solid black;
+     border-radius:30px;
+} 
+#level{
+    height: 30vmin;
+    width:30vmin;
+    font-size:30px;
+    font-weight: 1000;
+    font-family: monospace;
+    color:burlywood;
+}
+#level{
+    display: block;
+    position: relative;
+   padding-left: 25px;
+   margin-bottom: 12px;
+   cursor: pointer;
+   font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+   user-select: none;
+}
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+  .button {
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    background-color: #16a085;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 80px;   /* 200px */
+    text-align: center;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #193047;
+    border-radius: 4px;
+  }
+  
+  .button:hover {
+    background: #fff;
+    box-shadow: 0px 2px 10px 5px #1abc9c;
+    color: #000;
+  }
+  
+  .button:after {
+    content: "";
+    background: #1abc9c;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  
+  .button:focus { outline:0; }
+  
